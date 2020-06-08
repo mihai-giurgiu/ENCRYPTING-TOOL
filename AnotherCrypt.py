@@ -27,7 +27,7 @@ def decrypt(enc, password):
     return unpad(cipher.decrypt(enc[16:]))
 
 
-encrypted = encrypt("Ce film", password)
+encrypted = encrypt("Choose Password", password)
 decrypted = decrypt(encrypted, password)
 print(encrypted)
 print(decrypted)
